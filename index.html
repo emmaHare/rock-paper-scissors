@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock Paper Scissors</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Megrim:regular" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,
+    regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,
+    700italic,800italic,900italic" rel="stylesheet" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22
+     viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>✌️</text></svg>">
+</head>
+<body>
+    <h1>Rock Paper Scissors</h1>
+    <p class="crName">
+        made by
+        <a href="https://github.com/emmahare">emmahare</a>
+    </p>
+    <div id="playerDisplay">Player: </div>
+    <div id="computerDisplay">Computer: </div>
+    <div id="resultDisplay">Choose a weapon!</div>
+
+    <div class="scoreDisplay" class="pScoreDisplay">Player Score:
+        <span id="playerScoreDisplay">0</span>
+    </div>
+    <div class="scoreDisplay">Computer Score:
+        <span id="computerScoreDisplay">0</span>
+    </div>
+
+    <button id="restartBtn">Rematch</button>
+
+    <div class="choices">
+        <button class="rock" onclick="playGame('rock')">✊</button>
+        <button class="paper" onclick="playGame('paper')">✋</button>
+        <button class="scissors" onclick="playGame('scissors')">✌️</button>
+    </div>
+    
+    
+    <script src="script.js"></script>
+</body>
+</html>
